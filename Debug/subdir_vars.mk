@@ -7,45 +7,39 @@ CMD_SRCS += \
 ../lnk_msp430fr6989.cmd 
 
 C_SRCS += \
+../boardConfig.c \
 ../echoStateMachine.c \
-../encoder.c \
 ../main.c \
-../msp430BuiltInIO.c \
-../servoControl.c 
+../msp430BuiltInIO.c 
 
 C_DEPS += \
+./boardConfig.d \
 ./echoStateMachine.d \
-./encoder.d \
 ./main.d \
-./msp430BuiltInIO.d \
-./servoControl.d 
+./msp430BuiltInIO.d 
 
 OBJS += \
+./boardConfig.obj \
 ./echoStateMachine.obj \
-./encoder.obj \
 ./main.obj \
-./msp430BuiltInIO.obj \
-./servoControl.obj 
+./msp430BuiltInIO.obj 
 
 OBJS__QUOTED += \
+"boardConfig.obj" \
 "echoStateMachine.obj" \
-"encoder.obj" \
 "main.obj" \
-"msp430BuiltInIO.obj" \
-"servoControl.obj" 
+"msp430BuiltInIO.obj" 
 
 C_DEPS__QUOTED += \
+"boardConfig.d" \
 "echoStateMachine.d" \
-"encoder.d" \
 "main.d" \
-"msp430BuiltInIO.d" \
-"servoControl.d" 
+"msp430BuiltInIO.d" 
 
 C_SRCS__QUOTED += \
+"../boardConfig.c" \
 "../echoStateMachine.c" \
-"../encoder.c" \
 "../main.c" \
-"../msp430BuiltInIO.c" \
-"../servoControl.c" 
+"../msp430BuiltInIO.c" 
 
 

@@ -8,6 +8,8 @@ main.obj: /Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/i
 main.obj: /Applications/ti/ccs1040/ccs/tools/compiler/ti-cgt-msp430_20.2.5.LTS/include/intrinsics_legacy_undefs.h
 main.obj: ../msp430BuiltInIO.h
 main.obj: ../global.h
+main.obj: ../boardConfig.h
+main.obj: ../echoStateMachine.h
 
 ../main.c:
 
@@ -24,4 +26,8 @@ main.obj: ../global.h
 ../msp430BuiltInIO.h:
 
 ../global.h:
+
+../boardConfig.h:
+
+../echoStateMachine.h:
 

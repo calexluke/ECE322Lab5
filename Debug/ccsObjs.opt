@@ -1,1 +1,1 @@
-"./echoStateMachine.obj" "./encoder.obj" "./main.obj" "./msp430BuiltInIO.obj" "./servoControl.obj" "../lnk_msp430fr6989.cmd" -llibmpu_init.a -llibmath.a -llibc.a 
+"./boardConfig.obj" "./echoStateMachine.obj" "./main.obj" "./msp430BuiltInIO.obj" "../lnk_msp430fr6989.cmd" -llibmpu_init.a -llibmath.a -llibc.a 

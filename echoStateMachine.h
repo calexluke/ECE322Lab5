@@ -8,7 +8,7 @@
 #ifndef ECHOSTATEMACHINE_H_
 #define ECHOSTATEMACHINE_H_
 
-enum echoStates {waitForPulse, countingTime, calculateLength} echoState;
+enum echoStates {beforeFirstPulse, risingEdge, duringPulse, afterPulse} echoState;
 void echoTick(int echoInput);
 void echoStateTransition(int echoInput);
 void echoStateActions();

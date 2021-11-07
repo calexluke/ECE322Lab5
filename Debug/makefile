@@ -8,11 +8,10 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./boardConfig.obj" \
 "./echoStateMachine.obj" \
-"./encoder.obj" \
 "./main.obj" \
 "./msp430BuiltInIO.obj" \
-"./servoControl.obj" \
 "../lnk_msp430fr6989.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmpu_init.a \
@@ -158,8 +157,8 @@ ECE322Lab5.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "echoStateMachine.obj" "encoder.obj" "main.obj" "msp430BuiltInIO.obj" "servoControl.obj" 
-	-$(RM) "echoStateMachine.d" "encoder.d" "main.d" "msp430BuiltInIO.d" "servoControl.d" 
+	-$(RM) "boardConfig.obj" "echoStateMachine.obj" "main.obj" "msp430BuiltInIO.obj" 
+	-$(RM) "boardConfig.d" "echoStateMachine.d" "main.d" "msp430BuiltInIO.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
